@@ -1,0 +1,60 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #1e1e1e;   
+  color: #eaeaea;
+  margin: 0;
+  padding: 20px;
+}
+
+
+h1 {
+  margin-bottom: 12px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 10px;
+  background: #1976d2;
+  color: white;
+  font-size: 14px;
+}
+
+button:hover {
+  background: #125aa3;
+}
+
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.dashboard {
+  margin-top: 20px;
+}
+
+.timer {
+  background: #ffffff;   
+  color: #111;           
+  border-radius: 10px;
+  padding: 14px;
+  margin-bottom: 12px;
+  width: 220px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+}
+
+
+.timer-value {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1976d2;
+  margin: 10px 0;
+}
+
+
+.timer-buttons {
+  display: flex;
+  gap: 6px;
+}
