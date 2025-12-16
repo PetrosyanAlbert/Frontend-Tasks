@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            const myFetch = (url, options = {}) => {
+                return new Promise((resolve, reject) => {
+                    const xml = new XMLHttpRequest();
+
+                    const method = options.method || "GET";
+                    const headers = options.headers || {};
+                    const body = options.body || null;
+
+                    xml.open(method, url, true);
+
+                    for (let i in headers) {
+                        xml.setRequestHeader(i, headers[i]);
+                    }
+
+                    xml.onload = () => {
+                        resolve({
+                            ok: xml.status >= 200 && xml.status < 300,
+                            status: xml.status,
+                            statusText: xml.statusText,
+                            text() {
+                                return Promise.resolve(xml.responseText);
+                            },
+                            json() {
+                                return Promise.resolve(
+                                    JSON.parse(xml.responseText)
+                                );
+                            },
+                        });
+                    };
+
+                    xml.onerror = () => {
+                        reject(new Error("Request failed"));
+                    };
+
+                    xml.send(body);
+                });
+            };
+
+            myFetch("https://jsonplaceholder.typicode.com/users")
+                .then((res) => {
+                    console.log("status:", res.status);
+                    console.log("ok:", res.ok);
+                    return res.text();
+                })
+                .then((text) => {
+                    console.log("TEXT:", text);
+                })
+                .catch((err) => console.error(err));
+        </script>
+    </body>
+</html>
