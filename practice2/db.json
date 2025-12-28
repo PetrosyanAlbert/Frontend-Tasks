@@ -1,0 +1,29 @@
+{
+  "todos": [
+    {
+      "id": "1",
+      "text": "Learn React",
+      "completed": true
+    },
+    {
+      "id": "2",
+      "text": "Use axios",
+      "completed": true
+    },
+    {
+      "id": "4bc4",
+      "text": "skjdkfjd",
+      "completed": true
+    },
+    {
+      "id": "8af7",
+      "text": "dfnekqjkfe]",
+      "completed": false
+    },
+    {
+      "id": "e758",
+      "text": "Haylo",
+      "completed": false
+    }
+  ]
+}

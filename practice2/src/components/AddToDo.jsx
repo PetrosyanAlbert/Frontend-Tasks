@@ -1,23 +1,27 @@
-import { useState } from "react"   
+import { useState } from "react";
+import { useToDos } from "../context/ToDoContext";
 
-export const AddToDo = ({onAdd}) => {
+const AddToDo = () => {
     const [text, setText] = useState("");
-
+    const { addTodo } = useToDos();
     const handleSubmit = (e) => {
         e.preventDefault();
-        onAdd(text);
+        if (!text.trim()) return;
+        addTodo(text);
         setText("");
     };
 
-    return <div>
-        <h3>AddToDo</h3>
+    return (
         <form onSubmit={handleSubmit}>
             <input
+                type="text"
                 value={text}
+                placeholder="Write todo..."
                 onChange={(e) => setText(e.target.value)}
-                placeholder="Write your todo..."
             />
-            <button type="subnit">add</button>
+            <button type="submit">add</button>
         </form>
-    </div>
-}
+    );
+};
+
+export default AddToDo;

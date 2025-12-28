@@ -1,7 +1,17 @@
-export const ToDoItem = ({id, text, complete, onRemove}) => {
-    return <div style={{background: "indianred", padding: 20, margin: 10}}>
-        <h3>{text}</h3>
-        <button onClick={() => onRemove(id)}>delete</button>
-        <button>{complete ? "cancel" : "complete"}</button>
-    </div>
-}
+import { useToDos } from "../context/ToDoContext";
+
+const ToDoItem = ({ todo }) => {
+    const { toggleTodo, deleteToDo } = useToDos();
+
+    return (
+        <div>
+            <p>{todo.text}</p>
+            <button onClick={() => toggleTodo(todo.id)}>
+                {todo.completed ? "cancel" : "complete"}
+            </button>
+            <button onClick={() => deleteToDo(todo.id)}>Delete</button>
+        </div>
+    );
+};
+
+export default ToDoItem;

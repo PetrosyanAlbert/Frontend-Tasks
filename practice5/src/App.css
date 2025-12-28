@@ -1,0 +1,153 @@
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: rgba(34, 197, 94, 0.35);
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #1f2937; 
+}
+
+.app {
+    width: 100%;
+    max-width: 650px;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+}
+
+h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.add-user {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+
+    border: 1px solid #e5e7eb;
+}
+
+.add-user input {
+    flex: 1;
+    min-width: 150px;
+    padding: 10px 14px;
+    font-size: 14px;
+    background: #ffffff;
+    color: #111827;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+}
+
+.add-user input::placeholder {
+    color: #9ca3af;
+}
+
+.add-user input:focus {
+    outline: none;
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
+}
+
+.add-user button {
+    padding: 10px 20px;
+    background: #4f46e5;
+    color: #ffffff;
+
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.add-user button:hover {
+    background: #4338ca;
+}
+
+.limit-select {
+    margin-bottom: 20px;
+}
+
+.limit-select select {
+    padding: 10px 14px;
+    font-size: 14px;
+
+    background: #ffffff;
+    color: #111827;
+    caret-color: #111827;
+
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.limit-select option {
+    color: #111827;
+    background: #ffffff;
+}
+
+.user-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.user-item {
+    background: #ffffff;
+    padding: 16px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #e5e7eb;
+}
+
+.user-item p {
+    margin: 3px 0;
+    font-size: 14px;
+    color: #1f2937;
+}
+
+.user-item small {
+    display: block;
+    margin-top: 4px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #16a34a;
+}
+
+.user-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.user-actions button {
+    padding: 8px 14px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.user-actions button:first-child {
+    background: #22c55e;
+    color: #ffffff;
+}
+
+.user-actions button:last-child {
+    background: #ef4444;
+    color: #ffffff;
+}
