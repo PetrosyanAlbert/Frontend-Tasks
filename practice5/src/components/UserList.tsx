@@ -8,22 +8,13 @@ export const UserList = () => {
 
     const { state } = context;
     const { users, limit } = state;
-
-    const visibleUsers =
-        limit === "all"
-            ? users
-            : users.slice(0, limit);
-
+    const visibleUsers = limit === "all" ? users : users.slice(0, limit);
     return (
         <div>
             <h3>User List</h3>
-
-            {visibleUsers.length === 0 && (
-                <p>No users</p>
-            )}
-
-            {visibleUsers.map(u => (
-                <UserItem key={u.id} data={u} />
+            {visibleUsers.length === 0 && <p> No users </p>}
+            {visibleUsers.map((user) => (
+                <UserItem key={user.id} data={user} />
             ))}
         </div>
     );

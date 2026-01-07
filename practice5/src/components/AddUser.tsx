@@ -23,7 +23,6 @@ export const AddUser = () => {
                 salary: Number(salary),
             })
         );
-
         setName("");
         setAge("");
         setSalary("");
@@ -38,20 +37,19 @@ export const AddUser = () => {
                 onChange={(e) => setName(e.target.value)}
             />
 
-            <input 
+            <input
                 type="number"
                 placeholder="Age"
                 value={age}
                 onChange={(e) => setAge(e.target.value)}
             />
 
-            <input 
+            <input
                 type="number"
                 placeholder="Salary"
                 value={salary}
                 onChange={(e) => setSalary(e.target.value)}
             />
-
             <button onClick={handleSubmit}>Add</button>
         </div>
     );

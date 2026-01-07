@@ -1,4 +1,9 @@
-import type { Action, IUser, Limit } from "./types";
+import type { Action, IUser } from "./types";
+
+export const addUser = (user: IUser): Action => ({
+    type: "ADD_USER",
+    payload: user,
+});
 
 export const deleteUser = (id: number): Action => ({
     type: "DELETE_USER",
@@ -10,12 +15,7 @@ export const salaryUp = (id: number): Action => ({
     payload: id,
 });
 
-export const setLimit = (limit: Limit): Action => ({
+export const setLimit = (value: number | "all"): Action => ({
     type: "SET_LIMIT",
-    payload: limit,
-});
-
-export const addUser = (user: IUser): Action => ({
-    type: "ADD_USER",
-    payload: user,
+    payload: value,
 });

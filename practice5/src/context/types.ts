@@ -9,16 +9,14 @@ export interface IUser {
 
 export interface IState {
     users: IUser[];
-    limit: Limit;
+    limit: number | "all";
 }
 
-export type Limit = number | "all";
-
 export type Action =
+    | { type: "ADD_USER"; payload: IUser }
     | { type: "DELETE_USER"; payload: number }
     | { type: "SALARY_UP"; payload: number }
-    | { type: "ADD_USER"; payload: IUser }
-    | { type: "SET_LIMIT"; payload: Limit };
+    | { type: "SET_LIMIT"; payload: number | "all" };
 
 export interface IContextType {
     state: IState;
