@@ -8,6 +8,9 @@ import { Settings } from "../pages/protected/settings";
 import { Privacy } from "../pages/protected/settings/helpers/privacy";
 import { UpdatePassword } from "../pages/protected/settings/helpers/updatePassword";
 import { Bio } from "../pages/protected/settings/helpers/bio";
+import { Posts } from "../pages/protected/posts";
+import { Account } from "../pages/protected/account/Account";
+import { FollowRequest } from "../pages/protected/follow-requests";
 
 export const routes = createBrowserRouter([
     { path: "", element: <SignUp /> },
@@ -27,6 +30,9 @@ export const routes = createBrowserRouter([
                     { path: "bio", element: <Bio /> },
                 ],
             },
+            { path: "posts", element: <Posts /> },
+            { path: ":username", element: <Account /> },
+            { path: "requests", element: <FollowRequest /> },
         ],
     },
     { path: "*", element: <NotFound /> },

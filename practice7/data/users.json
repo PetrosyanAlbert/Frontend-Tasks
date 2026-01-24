@@ -1,0 +1,26 @@
+[
+  {
+    "id": "2",
+    "name": "Lilit Grigoryan",
+    "email": "lilit@mail.com",
+    "age": 2
+  },
+  {
+    "id": "3",
+    "name": "Gor Sargsyan",
+    "email": "gor@mail.com",
+    "age": 23
+  },
+  {
+    "id": "4",
+    "name": "Ani Hakobyan",
+    "email": "ani@mail.com",
+    "age": 20
+  },
+  {
+    "id": "5",
+    "name": "Tigran Mkrtchyan",
+    "email": "tigran@mail.com",
+    "age": 24
+  }
+]
