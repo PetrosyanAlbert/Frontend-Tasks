@@ -45,8 +45,6 @@ export default function EditPage({
                 age: user.age,
             }),
         });
-        console.log(user);
-        router.refresh();
         router.push(`/users/${id}`);
     };
 
