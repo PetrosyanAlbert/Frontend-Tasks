@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "id": "2",
+      "name": "Lilit",
+      "age": 25
+    },
+    {
+      "id": "f0e3",
+      "name": "Davo",
+      "age": 26
+    },
+    {
+      "id": "5712",
+      "name": "Grno",
+      "age": 16
+    },
+    {
+      "id": "a02e",
+      "name": "Jano",
+      "age": 24
+    }
+  ]
+}
