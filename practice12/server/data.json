@@ -1,0 +1,141 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "fullName": "Ivan Ivanov"
+    },
+    {
+      "id": "2",
+      "fullName": "Anna Petrova"
+    },
+    {
+      "id": "3",
+      "fullName": "Arman Hakobyan"
+    },
+    {
+      "id": "4",
+      "fullName": "Maria Sargsyan"
+    },
+    {
+      "id": "5",
+      "fullName": "David Melikyan"
+    },
+    {
+      "id": "6",
+      "fullName": "Lilit Grigoryan"
+    },
+    {
+      "id": "7",
+      "fullName": "Tigran Vardanyan"
+    },
+    {
+      "id": "8",
+      "fullName": "Sona Avetisyan"
+    },
+    {
+      "id": "9",
+      "fullName": "Karen Hovhannisyan"
+    },
+    {
+      "id": "10",
+      "fullName": "Narek Petrosyan"
+    }
+  ],
+  "subjects": [
+    {
+      "id": "math",
+      "title": "Mathematics"
+    },
+    {
+      "id": "physics",
+      "title": "Physics"
+    },
+    {
+      "id": "chemistry",
+      "title": "Chemistry"
+    },
+    {
+      "id": "biology",
+      "title": "Biology"
+    },
+    {
+      "id": "history",
+      "title": "History"
+    },
+    {
+      "id": "english",
+      "title": "English"
+    },
+    {
+      "id": "informatics",
+      "title": "Informatics"
+    }
+  ],
+  "grades": [
+    {
+      "studentId": "2",
+      "subjectId": "math",
+      "value": 4
+    },
+    {
+      "studentId": "4",
+      "subjectId": "informatics",
+      "value": 5
+    },
+    {
+      "studentId": "5",
+      "subjectId": "physics",
+      "value": 2
+    },
+    {
+      "studentId": "7",
+      "subjectId": "english",
+      "value": 4
+    },
+    {
+      "studentId": "8",
+      "subjectId": "informatics",
+      "value": 5
+    },
+    {
+      "studentId": "10",
+      "subjectId": "history",
+      "value": 4
+    },
+    {
+      "studentId": "10",
+      "subjectId": "biology",
+      "value": 5
+    },
+    {
+      "studentId": "1",
+      "subjectId": "chemistry",
+      "value": 5
+    },
+    {
+      "studentId": "1",
+      "subjectId": "history",
+      "value": 5
+    },
+    {
+      "studentId": "2",
+      "subjectId": "english",
+      "value": 5
+    },
+    {
+      "studentId": "1",
+      "subjectId": "informatics",
+      "value": 5
+    },
+    {
+      "studentId": "1",
+      "subjectId": "english",
+      "value": 4
+    },
+    {
+      "studentId": "2",
+      "subjectId": "informatics",
+      "value": 2
+    }
+  ]
+}
