@@ -33,4 +33,10 @@ User.init(
         createdAt: "created_at",
         updatedAt: false,
     },
+    {
+        sequelize,
+        tableName: "users",
+        timestamps: true,
+    },
+}
 );

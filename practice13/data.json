@@ -1,0 +1,44 @@
+{
+  "todos": [
+    {
+      "id": "2",
+      "title": "Set up development environment",
+      "completed": true
+    },
+    {
+      "id": "3",
+      "title": "Configure TypeScript settings",
+      "completed": false
+    },
+    {
+      "id": "4",
+      "title": "Create feature components",
+      "completed": false
+    },
+    {
+      "id": "5",
+      "title": "Implement Redux store slices",
+      "completed": false
+    },
+    {
+      "id": "6",
+      "title": "Write unit tests",
+      "completed": false
+    },
+    {
+      "id": "7",
+      "title": "Set up API integration",
+      "completed": false
+    },
+    {
+      "id": "8",
+      "title": "Style components with CSS",
+      "completed": false
+    },
+    {
+      "id": "9",
+      "title": "Test application in browser",
+      "completed": false
+    }
+  ]
+}
